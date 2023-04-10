@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormAddDiklatActivity">
+    tools:context=".FromAdd.FormAddDiklatActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -660,6 +660,23 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!--Button Add Diklat-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/btn_add_diklat_result"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_kd_kegiatan"
+            android:text="Save Data"
+            android:backgroundTint="@color/hijau"
+            android:textAllCaps="false"
+            />
 
 
     </LinearLayout>

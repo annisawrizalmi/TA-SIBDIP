@@ -1,8 +1,9 @@
-package com.annisawr.tasibdip
+package com.annisawr.tasibdip.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.annisawr.tasibdip.FromAdd.FormAddDiklatActivity
 import com.annisawr.tasibdip.databinding.ActivityDiklatBinding
 
 class DiklatActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class DiklatActivity : AppCompatActivity() {
 
         //arah ke form add
         binding.btnAddDiklat.setOnClickListener {
-            startActivity(Intent(this,FormAddDiklatActivity::class.java))
+            startActivity(Intent(this, FormAddDiklatActivity::class.java))
         }
     }
 

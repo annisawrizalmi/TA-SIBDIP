@@ -3,10 +3,7 @@ package com.annisawr.tasibdip
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
-import androidx.drawerlayout.widget.DrawerLayout
+import com.annisawr.tasibdip.dashboard.SuperAdmin_DashActivity
 import com.annisawr.tasibdip.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {

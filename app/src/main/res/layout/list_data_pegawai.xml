@@ -6,21 +6,35 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginVertical="10dp"
-    android:id="@+id/cv_data_diklat"
+    android:id="@+id/cv_data_pegawai"
     app:cardCornerRadius="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_pegawai"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:orientation="vertical"
-            android:id="@+id/lay_diklat"
+            android:id="@+id/lay_pegawai"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="70dp"
             >
 
             <!--Diklat ke-->
@@ -29,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10dp"
-                android:text="Diklat Ke-"
+                android:text="Nomor Induk Keluarga"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 />
@@ -38,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10dp"
-                android:text="Nama Diklat"
+                android:text="Nama Lengkap"
                 android:textSize="17sp"
                 android:textStyle="normal"
                 />
@@ -49,9 +63,9 @@
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:src="@drawable/ic_arrow"
-            app:layout_constraintEnd_toEndOf="@+id/lay_diklat"
+            app:layout_constraintEnd_toEndOf="@+id/lay_pegawai"
             android:layout_marginStart="264dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="13dp"
             app:layout_constraintTop_toTopOf="parent"
