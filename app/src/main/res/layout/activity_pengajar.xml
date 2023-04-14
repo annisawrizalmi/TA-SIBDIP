@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.PegawaiActivity">
+    tools:context=".Activity.PengajarActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtlay_pegawai"
+        android:id="@+id/txtlay_pengajar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cari Pegawai..."
+        android:hint="Cari Pengajar"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
         app:startIconDrawable="@drawable/ic_search"
         >
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_cari_pegawai"
+            android:id="@+id/txt_cari_pengajar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -35,11 +35,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="5dp"
-        android:id="@+id/fl_data_pegawai"
-        app:layout_constraintTop_toBottomOf="@+id/txtlay_pegawai" />
+        android:id="@+id/fl_data_pengajar"
+        app:layout_constraintTop_toBottomOf="@+id/txtlay_pengajar" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_add_pegawai"
+        android:id="@+id/btn_add_pengajar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -49,6 +49,5 @@
         android:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

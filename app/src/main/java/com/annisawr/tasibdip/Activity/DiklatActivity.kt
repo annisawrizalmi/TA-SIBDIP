@@ -19,6 +19,7 @@ class DiklatActivity : AppCompatActivity() {
         binding.btnAddDiklat.setOnClickListener {
             startActivity(Intent(this, FormAddDiklatActivity::class.java))
         }
+
     }
 
 

@@ -21,7 +21,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_cari"
+            android:id="@+id/txt_cari_diklat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"

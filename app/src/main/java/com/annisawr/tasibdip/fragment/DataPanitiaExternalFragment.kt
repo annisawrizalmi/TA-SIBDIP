@@ -6,23 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.annisawr.tasibdip.R
-import com.annisawr.tasibdip.databinding.FragmentDataDiklatBinding
-import com.annisawr.tasibdip.databinding.FragmentDataPegawaiBinding
+import com.annisawr.tasibdip.databinding.FragmentDataPanitiaExternalBinding
 
 //untuk menampilkan data
-class DataPegawaiFragment : Fragment() {
+class DataPanitiaExternalFragment : Fragment() {
 
-    private var _binding: FragmentDataPegawaiBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding : FragmentDataPanitiaExternalBinding? = null
+
     private val binding get() = _binding!!
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDataPegawaiBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentDataPanitiaExternalBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
@@ -31,5 +29,6 @@ class DataPegawaiFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 
 }
