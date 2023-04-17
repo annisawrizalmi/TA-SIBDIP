@@ -260,7 +260,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Laki-laki" />
 
                     <RadioButton
                         android:id="@+id/rb_jk2_pegawai"
@@ -270,7 +270,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Perempuan" />
                 </RadioGroup>
 
                 <!--Tempat Lahir-->
@@ -389,7 +389,7 @@
                     android:layout_marginHorizontal="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtlay_tggl_pegawai"
+                    app:layout_constraintTop_toBottomOf="@+id/txtlay_stts_kawin_pegawai"
                     android:hint="Alamat"
                     android:id="@+id/txtlay_alamat_pegawai"
                     >
@@ -525,6 +525,7 @@
                     android:hint="Telepon"
                     android:id="@+id/txtlay_tlpn_pegawai"
                     app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_phone"
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -550,6 +551,7 @@
                     android:hint="Email"
                     android:id="@+id/txtlay_email_pegawai"
                     app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_email"
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -774,7 +776,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtlay_prosi_pegawai"
-                    android:hint="Latar Belakang"
+                    android:hint="Latar Pendidikan"
                     android:id="@+id/txtlay_latbel_pegawai"
                     app:endIconMode="clear_text"
                     >
@@ -930,7 +932,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtlay_kligi_pegawai"
-                    android:hint="Nama Klinik Gigi"
+                    android:hint="Alamat Klinik Gigi"
                     android:id="@+id/txtlay_alamat_kligi_pegawai"
                     app:endIconMode="clear_text"
                     >
@@ -955,7 +957,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtlay_alamat_kligi_pegawai"
-                    android:hint="Nama Klinik Gigi"
+                    android:hint="Nomor NPWP"
                     android:id="@+id/txtlay_no_npwp_pegawai"
                     app:endIconMode="clear_text"
                     >
@@ -1034,7 +1036,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Ya" />
 
                     <RadioButton
                         android:id="@+id/rb_pjbt2_pegawai"
@@ -1044,7 +1046,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Tidak" />
                 </RadioGroup>
 
                 <!--Text Blokir-->
@@ -1089,7 +1091,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Ya" />
 
                     <RadioButton
                         android:id="@+id/rb_blokir2_pegawai"
@@ -1099,7 +1101,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Tidak" />
                 </RadioGroup>
 
                 <!--Text Aktif-->
@@ -1134,7 +1136,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_blokir_pegawai">
+                    app:layout_constraintTop_toBottomOf="@+id/tv_aktif_pegawai">
 
                     <RadioButton
                         android:id="@+id/rb_aktif1_pegawai"
@@ -1144,7 +1146,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Ya" />
 
                     <RadioButton
                         android:id="@+id/rb_aktif2_pegawai"
@@ -1154,7 +1156,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Tidak" />
                 </RadioGroup>
 
                 <!--Text Absensi Aktif-->
@@ -1199,7 +1201,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Ya" />
 
                     <RadioButton
                         android:id="@+id/rb_absensi_aktif2_pegawai"
@@ -1209,7 +1211,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Tidak" />
                 </RadioGroup>
 
                 <!--Text Penanggung Jawab-->
@@ -1254,7 +1256,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="YES" />
+                        android:text="Ya" />
 
                     <RadioButton
                         android:id="@+id/rb_pj2_pegawai"
@@ -1264,7 +1266,7 @@
                         android:elevation="4dp"
                         android:gravity="center"
                         android:paddingHorizontal="2dp"
-                        android:text="NO" />
+                        android:text="Tidak" />
                 </RadioGroup>
 
                 <!--Button Add Pegawai-->

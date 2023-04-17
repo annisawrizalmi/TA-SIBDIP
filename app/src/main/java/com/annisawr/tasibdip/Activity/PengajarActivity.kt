@@ -3,6 +3,7 @@ package com.annisawr.tasibdip.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.annisawr.tasibdip.FromAdd.FormAddPengajarActivity
 import com.annisawr.tasibdip.FromAdd.FromAddPegawaiActivity
 import com.annisawr.tasibdip.R
 import com.annisawr.tasibdip.databinding.ActivityPegawaiBinding
@@ -19,7 +20,7 @@ class PengajarActivity : AppCompatActivity() {
 
         //arah ke form add
         binding.btnAddPengajar.setOnClickListener {
-            startActivity(Intent(this, FromAddPegawaiActivity::class.java))
+            startActivity(Intent(this, FormAddPengajarActivity::class.java))
         }
     }
 }

@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.annisawr.tasibdip.FromAdd.FormAddDiklatActivity
+import com.annisawr.tasibdip.FromAdd.FormAddPanitiaActivity
 import com.annisawr.tasibdip.R
 import com.annisawr.tasibdip.databinding.ActivityDiklatBinding
 import com.annisawr.tasibdip.databinding.ActivityPanitiaBinding
@@ -25,7 +26,7 @@ class PanitiaActivity : AppCompatActivity() {
 
         //arah ke form add
         binding.btnAddPanitiaExternal.setOnClickListener {
-            startActivity(Intent(this, FormAddDiklatActivity::class.java))
+            startActivity(Intent(this, FormAddPanitiaActivity::class.java))
         }
 
 

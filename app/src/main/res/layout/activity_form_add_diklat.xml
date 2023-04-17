@@ -185,7 +185,7 @@
             android:elevation="4dp"
             android:gravity="center"
             android:paddingHorizontal="2dp"
-            android:text="YES" />
+            android:text="Ya" />
 
         <RadioButton
             android:id="@+id/rb_tunda2"
@@ -195,7 +195,7 @@
             android:elevation="4dp"
             android:gravity="center"
             android:paddingHorizontal="2dp"
-            android:text="NO" />
+            android:text="Tidak" />
     </RadioGroup>
 
     <!--Text Jenis Lokasi-->
@@ -240,7 +240,7 @@
             android:elevation="4dp"
             android:gravity="center"
             android:paddingHorizontal="2dp"
-            android:text="YES" />
+            android:text="Luar" />
 
         <RadioButton
             android:id="@+id/rb_jenis2"
@@ -250,7 +250,7 @@
             android:elevation="4dp"
             android:gravity="center"
             android:paddingHorizontal="2dp"
-            android:text="NO" />
+            android:text="Dalam" />
     </RadioGroup>
 
     <!--kab/Kota Pelaksanaan-->
