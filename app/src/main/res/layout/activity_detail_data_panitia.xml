@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-363dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Detail.DetailDataPanitiaActivity"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_panitia"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Nama Lengkap"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/nl_panitia"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nik_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nik_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Keluarga"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nik_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nip_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nip_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Pegawai"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nip_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jk_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jk_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jeniskelamin_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tggl_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tggl_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tempat/Tanggal Lahir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tggl_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, 04-11-1997"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_agama_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_agama_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_agama_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Islam"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_sttp_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_sttp_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Status Perkawinan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_sttp_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Single"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_alamat_lngkap_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_lngkap_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_lngkap_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="jln. sudirman pro.sumatera barat, kab. padang, kec. sasasa, kel. sjaksjka"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Telepon"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpnd_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_email_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_email_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="e-Mail"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_email_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="huywr32@gmail.com"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pendidikan_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pendidikan_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan Terakhir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pendidikan_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="SMK"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jbtn_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jbtn_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jbtn_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pngkat_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pngkt_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pangkat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pngkt_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Penata"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_golo_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_golo_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Golongan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_golod_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="III/a"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_npwp_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_npwp_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_npwpd_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ada"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_no_npwp_panitia"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_no_npwp_panitia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_no_npwp_panitia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

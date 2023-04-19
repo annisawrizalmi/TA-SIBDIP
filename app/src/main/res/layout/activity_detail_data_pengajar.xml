@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-363dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Detail.DetailDataPengajarActivity"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_pengajar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Nama Lengkap"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/nl_pengajar"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nik_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nik_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Keluarga"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nik_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nip_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nip_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Pegawai"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nip_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jk_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jk_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jeniskelamin_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tggl_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tggl_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tempat/Tanggal Lahir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tggl_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, 04-11-1997"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_agama_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_agama_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_agama_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Islam"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_sttp_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_sttp_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Status Perkawinan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_sttp_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Single"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_alamat_lngkap_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_lngkap_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_lngkap_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="jln. sudirman pro.sumatera barat, kab. padang, kec. sasasa, kel. sjaksjka"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="No. Handphone"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpn_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_email_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_email_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="e-Mail"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_email_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="huywr32@gmail.com"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pendidikan_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pendidikan_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan Terakhir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pendidikan_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="S-1"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jrsn_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jrsn_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jrsn_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sitem Informasi"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_thn_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_thn_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tahun Tamat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_thn_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="2023"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jbtn_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jbtn_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jbtn_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="hsjahsjahs"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pngkat_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pngkt_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pangkat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pngkt_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Penata"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_golo_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_golo_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Golongan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_golo_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="III/a"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_almt_kntr_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_kntr_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat Kantor"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_kntr_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="BDI Padang Jl. Bungo Pasang, Tabing, Padang"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_kntr_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_kntr_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Telepon Kantor"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpn_kntr_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_dikpedik_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_dikpedik_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Diklat Yang Pernah Diikut"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_dikpedik_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_peker_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_peker_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_peker_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_penme_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_penme_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Mengajar"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_penme_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_karmi_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_karmi_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Karya Ilmiah"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_karmi_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_spemapel_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_spemapel_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Spesialis Mata Pelajaran"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_spemapel_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view_npwp_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_npwp_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_npwpd_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="000923772536253625362"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_no_npwp_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_no_npwp_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_no_npwp_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ada"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_asal_nara_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_asal_nara_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Asal Narasumber"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pjd_pegawai"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Luar"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_blokir_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_blokir_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Blokir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_blokird_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ya"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_aktif_pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_aktif_pengajar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Aktif"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_aktifd_pengajar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ya"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

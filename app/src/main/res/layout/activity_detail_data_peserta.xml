@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-363dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Detail.DetailDataPesertaActivity"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_peserta"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Nama Lengkap"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/nl_peserta"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nik_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nik_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Keluarga"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nik_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jk_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jk_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jeniskelamin_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tggl_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tggl_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tempat/Tanggal Lahir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tggl_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, 04-11-1997"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_agama_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_agama_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_agama_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Islam"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_sttp_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_sttp_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Status Perkawinan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_sttp_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Single"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_alamat_lngkap_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_lngkap_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_lngkap_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="jln. sudirman pro.sumatera barat, kab. padang, kec. sasasa, kel. sjaksjka"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Telepon"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpn_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_email_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_email_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_email_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="huywr32@gmail.com"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pendidikan_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pendidikan_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan Terakhir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pendidikan_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="S-1"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jrsn_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jrsn_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jrsn_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sitem Informasi"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_thn_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_thn_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tahun Ijazah"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_thn_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="2023"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_thn_diklat_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_thn_diklat_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tahun Diklat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_thn_diklat_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="2020"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_perpem_peserta"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_perpem_peserta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Perusahaan Penempatan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_perpem_peserta"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="-----"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

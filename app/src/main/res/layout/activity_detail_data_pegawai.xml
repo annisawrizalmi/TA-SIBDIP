@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-363dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail.DetailDataPegawaiActivity"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_pegawai"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Nama Lengkap"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/nl_pegawai"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_nik_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_nik_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nomor Induk Keluarga"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_nik_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="12121829819281928"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_nip_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_nip_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nomor Induk Pegawai"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_nip_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="12121829819281928"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_divisi_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_divisi_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Divisi"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_divisi_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Seksi Penyelenggara Diklat"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_jk_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_jk_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_jeniskelamin_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_tggl_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_tggl_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tempat/Tanggal Lahir"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_tggl_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Jakarta, 04-11-1997"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_agama_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_agama_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Agama"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_agama_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Islam"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_sttp_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_sttp_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Status Perkawinan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_sttp_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_alamat_lngkap_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_alamat_lngkap_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_alamat_lngkap_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="jln. sudirman pro.sumatera barat, kab. padang, kec. sasasa, kel. sjaksjka"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_tlpn_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_tlpn_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Telepon"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_tlpn_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="081383726143"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_email_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_email_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_email_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="huywr32@gmail.com"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_pendidikan_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_pendidikan_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Pendidikan Terakhir"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_pendidikan_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="S-1"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_jrsn_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_jrsn_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Jurusan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_jrsn_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sitem Informasi"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_thn_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_thn_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tahun Lulus"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_thn_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="2023"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_sttsp_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_sttsp_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Status Kepegawaian"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_sttsp_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="shajshjahsja"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_jbtn_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_jbtn_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Jabatan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_jbtn_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="hsjahsjahs"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_pngkat_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_pngkt_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Pangkat"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_pngkt_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Penata"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_golo_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_golo_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Golongan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_golo_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="III/a"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_profi_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_profi_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Profil Singkat"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_profi_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="ajskajskajksjaksjakjsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_lapen_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_lapen_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Latar Pendidikan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_lapen_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="shajshajshajshjkhsajsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/view_godar_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_godar_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Golongan Darah"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_godar_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="A+"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_bpjs_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_bpjs_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="No. BPJS Kesehatan"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_bpjs_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="000923772536253625362"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_npwp_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_npwp_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nomor NPWP"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_npwpd_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="000923772536253625362"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_koor_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_koor_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sub Koordinator/Pejabat"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_koor_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ya"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_blokir_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_blokir_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Blokir"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_blokird_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ya"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_aktif_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_aktif_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Aktif"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_aktifd_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ya"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_pj_pegawai"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/lb_pj_pegawai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Penanggung Jawab"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_pjd_pegawai"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ya"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+    </ScrollView>

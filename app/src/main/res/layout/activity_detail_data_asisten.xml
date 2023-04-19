@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-363dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Detail.DetailDataAsistenActivity"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_asisten"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Nama Lengkap"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/nl_asisten"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nik_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nik_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Keluarga"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nik_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_nip_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_nip_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Pegawai"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_nip_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tggl_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tggl_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tempat/Tanggal Lahir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tggl_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, 04-11-1997"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_alamat_lngkap_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_lngkap_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_lngkap_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="jln. sudirman pro.sumatera barat, kab. padang, kec. sasasa, kel. sjaksjka"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Telepon"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpnd_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pendidikan_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pendidikan_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan Terakhir"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pendidikan_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="SMK"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_almt_kntr_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_alamat_kntr_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat Kantor"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_alamat_kntr_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="BDI Padang Jl. Bungo Pasang, Tabing, Padang"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_tlpn_kntr_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_tlpn_kntr_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Telepon Kantor"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_tlpn_kntr_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="081383726143"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_jbtn_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_jbtn_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_jbtn_pegawai"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Asisten Desainer"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_pngkat_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_pngkt_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pangkat"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_pngkt_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Penata Muda"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_golo_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_golo_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Golongan"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_golod_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="III/a"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_dikpedik_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_dikpedik_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Diklat Yang Pernah Diikut"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_dikpedik_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_peker_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_peker_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_peker_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_penme_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_penme_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Mengajar"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_penme_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_karmi_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_karmi_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Karya Ilmiah"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_karmi_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_spemapel_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_spemapel_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Spesialis Mata Pelajaran"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_spemapel_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="1.ajskajskajksjaksjakjsssssssssssssss,
+                2. ssssssssssssssssssssssssssssssss,
+                3. ssssssssssssssssssssssssssss"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view_npwp_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_npwp_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_npwpd_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ada"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_no_npwp_asisten"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/lb_no_npwp_asisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor NPWP"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/tv_no_npwp_asisten"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="12121829819281928"
+                android:textAlignment="textEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -11,5 +11,6 @@ class FormAddAsistenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFormAddAsistenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }
